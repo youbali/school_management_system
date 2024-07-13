@@ -2,26 +2,55 @@ public class Students {
     private int id;
     private String name;
     private int grade;
-    private int feespaid;
-    private int feestotal;
+    private int feesPaid;
+    private int feesTotal;
 
     //Constructor: to crete a new object by initialize the values
     public Students(int id, String name, int grade){
-        this.feespaid = 0;
-        this.feestotal = 3000;
+        this.feesPaid = 0;
+        this.feesTotal = 3000;
         this.id = id;
         this.name = name;
         this.grade = grade;
     }//Constructor
 
-    //Not going to alter tne Student's name
-    public void setGrade(int going){
-        this.grade = going;
+    public int getId(){
+        return id;
     }
 
-    public void updateFessPaid(int fees){
-        feespaid += fees; // feespaid = feespaid + fess;
+    public String getName(){
+        return name;
     }
 
+    public int getGrade(){
+        return grade;
+    }
+
+    public int getFeesPaid(){
+        return feesPaid;
+    }
+
+    public int getFeesTotal(){
+        return feesTotal;
+    }
+
+    public int getRemainingFees(){
+        return feesTotal - feesPaid;
+    }
+
+     //Not going to alter tne Student's name
+     public void setGrade(int grade){
+        this.grade = grade;
+    }
+
+    public void payFees(int fees){
+        feesPaid += fees; // feespaid = feespaid + fess;
+    //    School.updateTotalMoneyEarned(feesPaid);
+    }
+
+    public String toString(){
+        return "Student*s name: "+name+
+            "Total fees paid so far $ "+feesPaid+;
+    }
 
 }//class Students
