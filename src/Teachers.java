@@ -1,11 +1,11 @@
 public class Teachers {
     private int id;
     private String name;
-    private float salary;
-    private float salaryEarned;
+    private int salary;
+    private int salaryEarned;
 
     //Constructor
-    public Teachers(int id, String name, float salary){
+    public Teachers(int id, String name, int salary){
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -20,17 +20,17 @@ public class Teachers {
         return name;
     }
 
-    public float getSalary(){
+    public int getSalary(){
         return salary;
     }
 
-    public void setSalary(float salary){
+    public void setSalary(int salary){
         this.salary = salary;
     }
 
-    public void receiveSalary(float salary){
+    public void receiveSalary(int salary){
         salaryEarned += salary;
-    //    School.updateTotalMoneySpent(salary);
+        School.updateTotalMoneySpent(salary);
     }
 
     public String toString() {

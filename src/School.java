@@ -40,8 +40,8 @@ public class School {
     }
 
     //@param MoneyEarned money that is supposed to be  added
-    public static void updateTotalMoneyEarned(int MoneyEarned) {
-        totalMoneyEarned += MoneyEarned;
+    public static void updateTotalMoneyEarned(int moneyEarned) {
+        totalMoneyEarned += moneyEarned;
     }
 
     //@return the total money spent by the school.    

@@ -45,7 +45,7 @@ public class Students {
 
     public void payFees(int fees){
         feesPaid += fees; // feespaid = feespaid + fess;
-    //    School.updateTotalMoneyEarned(feesPaid);
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
     public String toString(){
